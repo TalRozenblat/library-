@@ -1,3 +1,62 @@
 table {
     border: 1px solid black;
 }
+
+form{
+    display:flex;
+    flex-flow: column nowrap;
+    border: 3px lightgray;
+    width: 30%;
+    background-color: lightgray;
+    border-radius: 10px;
+    margin: 1.5rem 0 1.5rem 1.5rem;
+    
+    padding: 0.5rem 0 0 0.5rem;
+    height:18rem;
+  }
+
+  label{
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-bottom: 6px;
+  }
+
+  input{
+    width: 80%;
+    height:10%;
+    border-radius: 5px;
+    border:0px;
+    margin-bottom: 6px;
+    padding:3px;
+    padding-left: 1rem;
+    
+  }
+
+  .readStatus{
+    width:5%;
+    height: auto;
+    border-radius: 0;
+    margin-bottom: 0px;
+    padding:0px;
+  }
+  
+
+  .btn{
+    width: 28%;
+    background-color:  white;
+    color:black;
+    font-size: 20px;
+    padding: 5px 20px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    cursor: pointer;
+    min-width: fit-content;
+  }
+
+  .btnWrapper{
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin:0 0 1rem 0;
+    padding:0;
+  }
