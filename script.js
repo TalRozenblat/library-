@@ -38,6 +38,7 @@ function addBookToTable(book){
     let authorCell = row.insertCell(1);
     let pagesCell = row.insertCell(2);
     let readCell = row.insertCell(3);
+    
 
     titleCell.appendChild(title);
     authorCell.appendChild(author);
@@ -52,4 +53,19 @@ function printBooks(myLibrary){
     }
 }
 
+//getting info from the form and adding it as a book to the library
+
+const btn = document.getElementById('btn');
+btn.addEventListener("click", function () {
+    let form = document.getElementById("form");
+    
+    let read = false;
+    if (form[3].checked){
+        read = true;
+    }
+  
+    const book = new Book(form[0].value, form[1].value, form[2].value, read);
+    book.addToLibrary(myLibrary);
+    addBookToTable(book);
+});
 
